@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+
+  "extends": [
+    "plugin:jsx-a11y/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": ["prettier", "jsx-a11y", "react", "cypress"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "cypress": true
+  }
+}
